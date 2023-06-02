@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 const BookNow = () => {
-//     const { title, price, _id } = useLoaderData();
-//   const { user } = useContext(AuthContext);
+  //     const { title, price, _id } = useLoaderData();
+  //   const { user } = useContext(AuthContext);
 
   const handlePlaceOrder = (event) => {
     event.preventDefault();
@@ -22,7 +22,7 @@ const BookNow = () => {
     //   massage,
     // };
 
-    // fetch("http://localhost:5000/orders", {
+    // fetch("https://personal-restaurant-server.vercel.app/orders", {
     //   method: "POST",
     //   headers: {
     //     "content-type": "application/json",
@@ -35,15 +35,14 @@ const BookNow = () => {
     //     if (data.acknowledged) {
     //         alert('Order placed Successfully')
     //         form.reset();
-            
 
     //     }
     //   })
     //   .catch((err) => console.error(err));
   };
-    return (
-        <div>
-            <form onSubmit={handlePlaceOrder}>
+  return (
+    <div>
+      <form onSubmit={handlePlaceOrder}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-4/5 mx-auto">
           <input
             type="text"
@@ -85,8 +84,8 @@ const BookNow = () => {
           />
         </div>
       </form>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default BookNow;

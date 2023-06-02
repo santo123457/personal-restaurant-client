@@ -9,10 +9,10 @@ const ReviewUs = () => {
     const form = event.target;
     const name = form.name.value;
     // const email = user?.email || "unregistered";
-    const email = form.email.value;     
+    const email = form.email.value;
     const rateStar = form.rating.value;
     const massage = form.massage.value;
-console.log(name,email,massage,rateStar);
+    console.log(name, email, massage, rateStar);
     // const order = {
     //   service: _id,
     //   serviceName: title,
@@ -23,7 +23,7 @@ console.log(name,email,massage,rateStar);
     //   massage,
     // };
 
-    // fetch("http://localhost:5000/orders", {
+    // fetch("https://personal-restaurant-server.vercel.app/orders", {
     //   method: "POST",
     //   headers: {
     //     "content-type": "application/json",
@@ -66,7 +66,6 @@ console.log(name,email,massage,rateStar);
             className="textarea textarea-bordered textarea-lg my-5 w-full"
           ></textarea>
 
-
           {/* Rating star option start */}
           <div className=" mb-5">
             <label htmlFor=" rating-2" className="block mb-2 ">
@@ -77,32 +76,31 @@ console.log(name,email,massage,rateStar);
                 type="radio"
                 name="rating"
                 className="mask mask-star-2 bg-orange-400"
-                value='1'
+                value="1"
               />
               <input
                 type="radio"
                 name="rating"
                 className="mask mask-star-2 bg-orange-400"
-                value='2'
+                value="2"
               />
               <input
                 type="radio"
                 name="rating"
                 className="mask mask-star-2 bg-orange-400"
-                value='3'
+                value="3"
               />
               <input
                 type="radio"
                 name="rating"
                 className="mask mask-star-2 bg-orange-400"
-                value='4'
+                value="4"
               />
               <input
                 type="radio"
                 name="rating"
                 className="mask mask-star-2 bg-orange-400"
-                value='5'
-                
+                value="5"
               />
             </div>
           </div>

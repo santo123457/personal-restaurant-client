@@ -14,10 +14,10 @@ const AddServices = () => {
     const service = {
       serviceName,
       imgUrl,
-      details  
+      details,
     };
 
-    fetch("http://localhost:5000/services", {
+    fetch("https://personal-restaurant-server.vercel.app/services", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -27,9 +27,8 @@ const AddServices = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data.acknowledged) {
-            alert('Order placed Successfully')
-            form.reset();
-
+          alert("Order placed Successfully");
+          form.reset();
         }
       })
       .catch((err) => console.error(err));

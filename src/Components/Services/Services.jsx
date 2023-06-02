@@ -5,7 +5,7 @@ import ServiceCard from "../ServiceCar/ServiceCard";
 
 const Services = () => {
 const serviceData = useLoaderData();
-console.log(serviceData);
+
   return (
     <div className="grid grid-cols-3 w-10/12 gap-5 mx-auto mt-10">
      {
